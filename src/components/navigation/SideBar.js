@@ -11,7 +11,7 @@ const axios = require('axios').default;
 
 function SideBar() {
   const [selected, setSelected] = useState('home');
-  const [small, setSmall] = useState(true);
+  //const [small, setSmall] = useState(true);
   const [activities, setActivities] = useState([]);
   const [showActivities, setShowSetActivities] = useState(false);
 
@@ -38,6 +38,7 @@ function SideBar() {
     } catch (error) {
       console.log(error.message);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showActivities]);
 
   function handleOnMouseOver(e) {

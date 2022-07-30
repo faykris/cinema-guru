@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../routes/auth/auth.css';
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,15 +11,6 @@ function Header({ userUsername, setIsLoggedIn }) {
     setIsLoggedIn(false);
     localStorage.removeItem('items');
   }
-
-  useEffect(() => {
-    try {
-      const accessToken = JSON.parse(localStorage.getItem('items')).accessToken
-    } catch (e) {
-      setLogOut();
-    }
-  })
-
 
   return (
     <nav className='header'>
