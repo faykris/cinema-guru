@@ -1,0 +1,73 @@
+:root {
+    --dark_red: #BB000E;
+    --light_red: #E31C25;
+    --white: #FFFFFF;
+    --login_icon: #999999;
+    --black: #000;
+    --bg-input: #2C2C2C;
+}
+
+
+.sidebar {
+    width: 2.1rem;
+    height: 100%;
+    position: fixed;
+    transition: .1s;
+}
+
+.sidebar,
+.sidebar svg {
+    background-color: var(--dark_red);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .7rem 0;
+}
+
+.lastest-activities {
+    background-color: var(--bg-input);
+    padding: .5rem;
+    margin: .2rem;
+    max-height: 30rem;
+}
+
+.lastest-activities h3 {
+    text-decoration: underline;
+    padding: .5rem 0 .7rem 0;
+}
+
+.lastest-activities ul {
+    overflow: auto;
+    max-height: 25rem;
+}
+
+.sidebar-opened {
+    width: 16%;
+    min-width: 15rem;
+}
+
+.navigation li {
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.navigation li svg {
+    transition: .2s;
+    cursor: pointer;
+}
+
+.navigation li:hover,
+.navigation li:hover svg {
+    background-color: var(--light_red);
+}
+
+.navigation li svg {
+    padding-right: .5rem;
+}
+
+.nav-selected,
+.nav-selected svg {
+    background-color: var(--light_red);
+}

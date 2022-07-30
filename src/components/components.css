@@ -1,0 +1,19 @@
+:root {
+    --dark_red: #BB000E;
+    --light_red: #E31C25;
+    --white: #FFFFFF;
+    --login_icon: #999999;
+    --black: #000;
+}
+
+.activity {
+    padding: .5rem 0;
+}
+
+.activity p {
+    font-size: 13px;
+}
+
+.activity p span {
+    color: var(--light_red);
+}
